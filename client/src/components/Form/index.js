@@ -2,8 +2,8 @@ import React from "react";
 
 export function Input(props) {
   return (
-    <div className="form-group">
-      <input className="form-control" {...props} />
+    <div className="form-group" >
+      <input className="form-control" style={{}} {...props } />
     </div>
   );
 }
@@ -11,18 +11,10 @@ export function Input(props) {
 export function TextArea(props) {
   return (
     <div className="form-group">
-      <textarea className="form-control" rows="10" {...props} />
+      <textarea className="form-control" rows="10" style={{ }} {...props} />
     </div>
   );
 }
-
-/* export function Checkbox(props) {
-  return (
-    <div className="form-group">
-      <input type="checkbox" className="form-control" {...props}></input>
-    </div>
-  );
-} */
 
 export function Image(props) {
   return (
@@ -34,7 +26,7 @@ export function Image(props) {
 
 export function FormBtn(props) {
   return (
-    <button {...props} style={{ float: "right", marginBottom: 10 }} className="btn btn-success">
+    <button {...props} style={{ float: "right", marginBottom: 10, backgroundColor: "#647a4f" , borderColor: "#647a4f" }} className="btn btn-success">
       {props.children} 
     </button>
   );
