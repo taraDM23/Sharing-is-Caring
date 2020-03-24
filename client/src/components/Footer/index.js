@@ -4,11 +4,10 @@ import "./style.css";
 function Footer() {
   return (
     <footer className="footer">
-      <span>Footer
-          <p className="float-right">
-          <a href="#">Back to top</a>
+      <span>
+        <p className="float-right">
+          <a href="#" id="1">Top</a>
         </p>
-
       </span>
     </footer>
   );
