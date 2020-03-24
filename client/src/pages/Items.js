@@ -53,11 +53,14 @@ function Items() {
           <Jumbotron>
             <h1>What would you like to donate?</h1>
           </Jumbotron>
-          <form>
+          <h4>Please enter the details of the item here:</h4>
+          <form style={{marginLeft: 50 , marginRight:50, marginTop: 15}} >
+      
             <Input
               onChange={handleInputChange}
               name="title"
               placeholder="Title (required)"
+
             />
             <Input
               onChange={handleInputChange}
