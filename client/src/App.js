@@ -22,6 +22,7 @@ function App() {
           <Route exact path="/item/:id" component={Detail} />
           <Route exact path="/aboutUs" component={About} />
           <Route exact path="/contactUs" component={Contact} />
+     {/*      <Route exact path="/contactUs/send" component={Contact} /> */}
           <Route component={NoMatch} />
         </Switch>
         <Footer />
