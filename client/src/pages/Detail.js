@@ -4,6 +4,7 @@ import { Col, Row, Container } from "../components/Grid";
 import Jumbotron from "../components/Jumbotron";
 import API from "../utils/API";
 
+
 function Detail(props) {
   const [item, setItem] = useState({})
 
@@ -18,9 +19,9 @@ function Detail(props) {
       <Row>
         <Col size="md-12">
           <Jumbotron>
-            <h4>
+            <h5>
               {item.title}
-            </h4>
+            </h5>
 
             <h5>
               Shared by {item.author}
@@ -29,8 +30,8 @@ function Detail(props) {
         </Col>
       </Row>
       <Row>
-        <Col size="md-10 md-offset-1">
-          <article>
+        <Col size="md-12 md-offset-1">
+          <article style={{ padding: 15 }} >
             <h4> Details </h4>
             <ul>
               <li>Item Description : {item.synopsis}</li>
@@ -48,7 +49,7 @@ function Detail(props) {
         </Col>
       </Row>
       <Row>
-        <Col size="md-10">
+        <Col size="md-12">
           <Link to="/Home">← Back to Items</Link>
         </Col>
       </Row>
