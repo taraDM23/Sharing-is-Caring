@@ -1,11 +1,8 @@
 import React, { useState, useEffect } from "react";
-//import DeleteBtn from "../components/DeleteBtn";
+import DeleteBtn from "../components/DeleteBtn";
 import Jumbotron from "../components/Jumbotron";
 import API from "../utils/API";
 import Grid from '@material-ui/core/Grid';
-//import { Link } from "react-router-dom";
-//import { Col, Row, Container } from "../components/Grid";
-//import { List } from "../components/List";
 import MediaCard from "../components/Card";
 
 
@@ -46,6 +43,7 @@ function Home() {
                 <Grid item xs={3}>
                   <MediaCard key={item._id} item={item}>
                   </MediaCard>
+                   <DeleteBtn onClick={() => deleteItem(item._id)} />
                 </Grid>
               ))
             }
