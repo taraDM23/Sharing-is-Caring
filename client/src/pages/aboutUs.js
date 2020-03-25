@@ -1,5 +1,7 @@
 import React from "react";
 import Jumbotron from "../components/Jumbotron";
+import { makeStyles } from '@material-ui/core/styles';
+import MediaCard from "../components/Card/index";
 
 function aboutUs() {
   return (
@@ -7,7 +9,7 @@ function aboutUs() {
       <Jumbotron>
         <h1>About Us</h1>
       </Jumbotron>
-      
+      <MediaCard/>
       <p>
         Donec a volutpat quam. Curabitur nec varius justo, sed rutrum ligula. Curabitur pellentesque
         turpis sit amet eros iaculis, a mollis arcu dictum. Ut vel ante eget massa ornare placerat.
@@ -19,9 +21,11 @@ function aboutUs() {
         placerat accumsan mi, ut congue neque placerat eu. Donec nec ipsum in velit pellentesque
         vehicula sit amet at augue. Maecenas aliquam bibendum congue. Pellentesque semper, lectus
         non ullamcorper iaculis, est ligula suscipit velit, sed bibendum turpis dui in sapien.
-      </p>
+      </p>  
     </div>
+    
   );
+  
 }
 
 export default aboutUs;
