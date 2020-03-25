@@ -1,9 +1,10 @@
 .list-overflow-container {
-  max-height: 545px;
+
   border: 1px #aac694 solid;
   border-radius: 4px;
   margin-bottom: 30px;
   overflow-x: hidden;
+  padding: 13px;
 }
 
 
