@@ -1,5 +1,6 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import { makeStyles } from '@material-ui/core/styles';
 import Items from "./pages/Items";
 import Home from "./pages/Home";
 import Detail from "./pages/Detail";
