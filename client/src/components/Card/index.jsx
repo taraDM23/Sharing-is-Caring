@@ -8,6 +8,7 @@ import CardContent from '@material-ui/core/CardContent';
 import CardMedia from '@material-ui/core/CardMedia';
 import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
+import Img from "../Card/"
 import "./style.css";
 
 
@@ -36,15 +37,15 @@ export default function MediaCard(props) {
         <CardActionArea>
           <CardMedia
             className={classes.media}
-            image="./hero-img-1.png"
+            image="Img"
             title={props.item.title}
           />
           <CardContent>
             <Typography gutterBottom variant="h5" component="h2">
-              {props.item.quantity}
+              {props.item.title}
             </Typography>
             <Typography variant="body2" color="textSecondary" component="p">
-              {props.item.quantity} {props.item.title} posted by {props.item.author}
+             {props.item.title} posted by {props.item.author}
             </Typography>
           </CardContent>
         </CardActionArea>
