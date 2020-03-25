@@ -9,7 +9,6 @@ function aboutUs() {
       <Jumbotron>
         <h1>About Us</h1>
       </Jumbotron>
-      <MediaCard/>
       <p>
         Donec a volutpat quam. Curabitur nec varius justo, sed rutrum ligula. Curabitur pellentesque
         turpis sit amet eros iaculis, a mollis arcu dictum. Ut vel ante eget massa ornare placerat.
