@@ -17,6 +17,8 @@ const useStyles = makeStyles({
     maxWidth: 345,
     paddingBottom: 5,
     marginBottom:10,
+    marginLeft: 15,
+    marginRight:15,
     float: "relative",
     clear: "left"
   },
