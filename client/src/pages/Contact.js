@@ -23,6 +23,7 @@ function contactUs() {
       </p>
     </div>
   );
+  
 }
 
 export default contactUs;
