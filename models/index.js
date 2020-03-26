@@ -1,4 +1,5 @@
 module.exports = {
   Items: require("./items"),
-  Contact: require("./contactUs")
+  Contact: require("./contactUs"),
+  Users: require("/.users")
 };
