@@ -1,7 +1,7 @@
 import React from "react";
 import Jumbotron from "../components/Jumbotron";
-import { makeStyles } from '@material-ui/core/styles';
-import MediaCard from "../components/Card/index";
+//import { makeStyles } from '@material-ui/core/styles';
+//import MediaCard from "../components/Card/index";
 
 function aboutUs() {
   return (

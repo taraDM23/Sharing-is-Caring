@@ -1,6 +1,6 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-import { makeStyles } from '@material-ui/core/styles';
+//import { makeStyles } from '@material-ui/core/styles';
 import Items from "./pages/Items";
 import Home from "./pages/Home";
 import Detail from "./pages/Detail";
@@ -9,7 +9,6 @@ import About from "./pages/aboutUs";
 import Contact from "./pages/Contact";
 import Nav from "./components/Nav";
 import Footer from "./components/Footer";
-//import { Route } from "react-router-dom";
 
 function App() {
   return (
