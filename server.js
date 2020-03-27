@@ -18,11 +18,9 @@ if (process.env.NODE_ENV === "production") {
 }
 // Add routes, both API and view
 app.use(routes);
-
- app.get('*',(req, res) => {
-    res.sendFile(path.resolve(__dirname, 'client/build', 'index.html'));
-}); 
-
+app.get('*',(req, res) => {
+    res.sendFile(path.resolve(__dirname, 'client/build', 'manifest.json'));
+});
 
 // Connect to the Mongo DB
 mongoose.connect("mongodb://user1:password1@ds123619.mlab.com:23619/heroku_w4xs3q9j", { useNewUrlParser: true, useUnifiedTopology: true } );
