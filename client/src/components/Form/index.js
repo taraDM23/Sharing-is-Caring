@@ -3,7 +3,7 @@ import React from "react";
 export function Input(props) {
   return (
     <div className="form-group" >
-      <input className="form-control" style={{}} {...props } />
+      <input className="form-control" style={{ fontFamily: 'Work Sans, sans-serif'}} {...props } />
     </div>
   );
 }
@@ -26,7 +26,7 @@ export function TextArea(props) {
  */
 export function FormBtn(props) {
   return (
-    <button {...props} style={{ float: "right", marginBottom: 10, backgroundColor: "#647a4f" , borderColor: "#647a4f" }} className="btn btn-success">
+    <button {...props} style={{ float: "right", marginBottom: 10, backgroundColor: "#647a4f" , borderColor: "#647a4f",  }} className="btn btn-success">
       {props.children} 
     </button>
   );
