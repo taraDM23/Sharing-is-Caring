@@ -2,8 +2,7 @@ const mongoose = require("mongoose");
 const db = require("../models");
 
 mongoose.connect(
-  process.env.MONGODB_URI ||
-  "mongodb://localhost/sharingiscaring"
+  "mongodb://user1:password1@ds123619.mlab.com:23619/heroku_w4xs3q9j"
 );
 
 const itemSeed = [
