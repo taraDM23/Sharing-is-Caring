@@ -3,10 +3,15 @@ import Jumbotron from "../components/Jumbotron";
 import API from "../utils/API";
 import { Col, Row, Container } from "../components/Grid";
 import { Input, TextArea, FormBtn, } from "../components/Form";
+//import Checkbox from '@material-ui/core/Checkbox';
+//import FormControlLabel from '@material-ui/core/FormControlLabel';
+
 
 function Items() {
   const [items, setItem] = useState([])
   const [formObject, setFormObject] = useState({})
+  console.log(items)
+  console.log(formObject)
 
   useEffect(() => {
     loadItems()
@@ -36,26 +41,28 @@ function Items() {
         expDate: formObject.expDate,
         OtherNotes: formObject.OtherNotes,
         delivery: formObject.delivery,
-        pickupLocation:formObject.pickupLocation,
+        pickupLocation: formObject.pickupLocation,
         pickupTime: formObject.pickupTime,
         photo: formObject.photo,
-        date:formObject.date, 
+        date: formObject.date,
       })
         .then(res => loadItems())
         .catch(err => console.log(err));
+      return window.location.replace(`/home`);
     }
   };
 
   return (
     <Container fluid>
       <Row>
+        <Jumbotron>
+          <h1></h1>
+        </Jumbotron>
         <Col size="md-12">
-          <Jumbotron>
-            <h1>What would you like to donate?</h1>
-          </Jumbotron>
-          <h4>Please enter the details of the item here:</h4>
-          <form style={{marginLeft: 50 , marginRight:50, marginTop: 15}} >
-      
+
+          <h4 style={{ fontWeight: "normal" }}>Please enter the details of the item here:</h4>
+          <form style={{ marginLeft: 50, marginRight: 50, marginTop: 15 }} >
+
             <Input
               onChange={handleInputChange}
               name="title"
@@ -72,49 +79,54 @@ function Items() {
               name="synopsis"
               placeholder="Donation Details"
             />
-             <Input
+            <Input
               onChange={handleInputChange}
               name="quantity"
               placeholder="Quantity"
             />
-             <Input
+            <Input
               onChange={handleInputChange}
               name="expDate"
               placeholder="Expiration Details (Optional)"
             />
-             <Input
+            <Input
               onChange={handleInputChange}
-              name="Other"
-              placeholder="Other Details (Optional)"
+              name="OtherNotes"
+              placeholder="Other Details"
             />
-{/*              <Checkbox
-              onChange={handleInputChange}
-              name="delivery"
-              label="Delivery Offered"
-              //type="checkbox"
-           /> */}
-             <Input
+            {/*  <FormControlLabel
+              control={
+                <Checkbox
+                  
+                  onChange={handleInputChange}
+                  name="checkedB"
+                  color="primary"
+                />
+              }
+              label="Delivery Provided? "
+            /> */}
+            <Input
               onChange={handleInputChange}
               name="pickupLocation"
-              placeholder="pickup Location (Optional)"
+              placeholder="pickup Location (If any)"
             />
-             <Input
+            <Input
               onChange={handleInputChange}
               name="pickupTime"
-              placeholder="Pickup Time (Optional)"
+              placeholder="Pickup Time (If any)"
             />
-             <Input
+            <Input
               onChange={handleInputChange}
-              name="Image"
-              placeholder="Image"
+              name="photo"
+              placeholder="Add an image URL address"
             />
             <FormBtn
               disabled={!(formObject.author && formObject.title)}
-              onClick={handleFormSubmit}       
+              onClick={handleFormSubmit}
             >
               Submit
               </FormBtn>
-               
+
           </form>
         </Col>
       </Row>
