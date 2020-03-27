@@ -12,8 +12,8 @@ const itemSchema = new Schema({
   pickupLocation: { type: String},
   pickupTime: { type: String },
   date: { type: Date, default: Date.now },
-  photo: String
-});
+  photo: { type: String}
+    });
 
 const Items = mongoose.model("Item", itemSchema);
 
