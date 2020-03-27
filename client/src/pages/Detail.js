@@ -35,7 +35,7 @@ function Detail(props) {
         <Col size="md-12 md-offset-1">
           <article style={{ fontFamily: "Work Sans, sans-serif", padding: 15, marginRight: 50, marginLeft: 50, fontWeight: "normal" }} >
             <h4 style={{ fontFamily: "Work Sans, sans-serif", fontWeight: "normal" }}> Details </h4>
-            <img src={item.photo}></img>
+            <img src={item.photo} alt="donation image"></img>
             <ul>
               <p></p>
               <li>Item Description : {item.synopsis}</li>

@@ -41,7 +41,7 @@ export default function MediaCard(props) {
       <Card className={classes.root}>
         <CardActionArea>
           <Link to={"/item/" + props.item._id}>
-            <img src={props.item.photo} style= {{width: 300, height: 200}}></img>
+            <img src={props.item.photo} style= {{width: 300, height: 200}} alt="donation image"></img>
             <CardContent>
               <Typography gutterBottom variant="p" component="p" style= {{padding: 0}}>
                 {props.item.title}

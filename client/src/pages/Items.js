@@ -56,7 +56,7 @@ function Items() {
     <Container fluid>
       <Row>
         <Jumbotron>
-          <h1></h1>
+          <h1>Donation</h1>
         </Jumbotron>
         <Col size="md-12">
 
