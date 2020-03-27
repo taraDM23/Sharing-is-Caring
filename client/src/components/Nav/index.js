@@ -6,6 +6,7 @@ function Nav() {
   return (
     <nav className="navbar navbar-expand-lg navbar navbar-light "> 
       <Link className="navbar-brand" to="/Home">
+      <img src="http://themebubble.com/demo/webify/creative/wp-content/themes/webify/assets/img/logo-dark.png" style= {{marginRight: 15 , width: 30, height: 20}} alt = ""></img>
         Sharing is Caring
       </Link>
       <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
