@@ -4,6 +4,9 @@
     position: relative;
     clear: both;
     width: 100%;
+    font-family: 'Work Sans', sans-serif;
+    border-top: solid 1px darkgrey;
+    
     
 }
 
@@ -14,9 +17,13 @@
 }
 
 a {
-    color: green ;
+    color: black ;
     text-decoration: none;
     background-color: transparent;
     font-size: large;
-    font-weight: bolder;
+    font-weight: normal;
+}
+
+p {
+  font-weight: normal;
 }
