@@ -40,7 +40,7 @@ function Home() {
           <Grid container>
             {
               items.map(item => (
-                <Grid item xs={3}>
+                <Grid item sm={3} xs={12} >
                   <MediaCard key={item._id} item={item}>
                   </MediaCard>
                    <DeleteBtn onClick={() => deleteItem(item._id)} />
