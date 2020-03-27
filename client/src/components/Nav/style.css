@@ -1,11 +1,13 @@
-img {
-    width: 200px;
-    height: 100px;
-}
 
 .navbar {
     color:black !important;
     background-color: white !important;
+    border-bottom: solid 1px darkgrey;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: normal;
+}
+.navbar-brand {
+  font-weight: normal;
 }
 
 .navbar-light .navbar-brand {
@@ -16,6 +18,9 @@ img {
     color: black;
 }
 
+a { color: black;
+
+}
 a:hover {
-  color: red;
+  color: rgb(75, 75, 172);
 }
