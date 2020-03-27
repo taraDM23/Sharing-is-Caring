@@ -18,7 +18,7 @@ if (process.env.NODE_ENV === "production") {
 // Add routes, both API and view
 app.use(routes);
 app.get('*',(req, res) => {
-    res.sendFile(path.resolve(__dirname, 'client/build', 'index.html'));
+    res.sendFile(path.resolve(__dirname, 'client/build', 'manifest.json'));
 });
 
 // Connect to the Mongo DB
