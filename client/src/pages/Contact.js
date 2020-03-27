@@ -1,15 +1,15 @@
-  
+
 import React from "react";
 import Jumbotron from "../components/Jumbotron";
 
 function contactUs() {
   return (
     <div>
-       <Jumbotron>
-         <h1> Contact Us</h1>
-       </Jumbotron>
-      
-      <p>
+      <Jumbotron>
+        <h1> Contact Us</h1>
+      </Jumbotron>
+
+      <p style={{ marginRight: 50, marginLeft: 50, fontWeight: "normal",}}>
         Donec a volutpat quam. Curabitur nec varius justo, sed rutrum ligula. Curabitur pellentesque
         turpis sit amet eros iaculis, a mollis arcu dictum. Ut vel ante eget massa ornare placerat.
         Etiam nisl orci, finibus sodales volutpat et, hendrerit ut dolor. Suspendisse porta dictum
@@ -23,7 +23,7 @@ function contactUs() {
       </p>
     </div>
   );
-  
+
 }
 
 export default contactUs;
