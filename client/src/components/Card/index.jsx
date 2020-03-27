@@ -8,7 +8,7 @@ import CardContent from '@material-ui/core/CardContent';
 import CardMedia from '@material-ui/core/CardMedia';
 import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
-//import Img from "../Card/"
+//import Image from 'material-ui-image'
 import "./style.css";
 
 
@@ -16,16 +16,20 @@ const useStyles = makeStyles({
   root: {
     maxWidth: 345,
     paddingBottom: 5,
-    marginBottom:10,
+    marginBottom: 10,
     marginLeft: 15,
-    marginRight:15,
+    marginRight: 15,
     float: "relative",
-    clear: "left"
+    clear: "left",
+    color: "black",
+    height: 300,
+    fontFamily: 'Work Sans',
+    
   },
   media: {
     height: 140,
   },
-  
+
 });
 
 
@@ -37,27 +41,25 @@ export default function MediaCard(props) {
     <div>
       <Card className={classes.root}>
         <CardActionArea>
-          <CardMedia
-            className={classes.media}
-            image="Img"
-            title={props.item.title}
-          />
-          <CardContent>
-            <Typography gutterBottom variant="h5" component="h2">
-              {props.item.title}
-            </Typography>
-            <Typography variant="body2" color="textSecondary" component="p">
-             {props.item.title} posted by {props.item.author}
-            </Typography>
-          </CardContent>
+          <Link to={"/item/" + props.item._id}>
+            <img src={props.item.photo}></img>
+            <CardContent>
+              <Typography gutterBottom variant="h5" component="h2">
+                {props.item.title}
+              </Typography>
+              <Typography variant="body2" color="textSecondary" component="p">
+                {props.item.title} posted by {props.item.author}
+              </Typography>
+            </CardContent>
+          </Link>
         </CardActionArea>
         <CardActions>
           <Button size="small" color="primary">
-            <Link to={"/item/" + props.item._id}> Learn More</Link>
+            <Link to={"/item/" + props.item._id}></Link>
           </Button>
         </CardActions>
       </Card>
-    </div>
+    </div >
   );
 }
 
