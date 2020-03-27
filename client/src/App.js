@@ -1,6 +1,5 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-//import { makeStyles } from '@material-ui/core/styles';
 import Items from "./pages/Items";
 import Home from "./pages/Home";
 import Detail from "./pages/Detail";
@@ -22,7 +21,6 @@ function App() {
           <Route exact path="/item/:id" component={Detail} />
           <Route exact path="/aboutUs" component={About} />
           <Route exact path="/contactUs" component={Contact} />
-     {/*      <Route exact path="/contactUs/send" component={Contact} /> */}
           <Route component={NoMatch} />
         </Switch>
         <Footer />
