@@ -9,7 +9,7 @@ function aboutUs() {
       <Jumbotron>
         <h1>About Us</h1>
       </Jumbotron>
-      <p>
+      <p style={{ marginRight: 50, marginLeft: 50, fontWeight: "normal",}}>
         Donec a volutpat quam. Curabitur nec varius justo, sed rutrum ligula. Curabitur pellentesque
         turpis sit amet eros iaculis, a mollis arcu dictum. Ut vel ante eget massa ornare placerat.
         Etiam nisl orci, finibus sodales volutpat et, hendrerit ut dolor. Suspendisse porta dictum
