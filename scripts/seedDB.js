@@ -16,7 +16,8 @@ const itemSeed = [
     expDate: "21/14/2020",
     pickupLocation: "Deakin Walker Farms 123 Old McDonald Hyw, Geelong",
     pickupTime:"At your earliest Convenience. First come first serve ",
-    date: new Date(Date.now())
+    date: new Date(Date.now()),
+    photo: "https://www.simplyrecipes.com/wp-content/uploads/2007/12/pearl-onions-whole2.jpg"
   },
  {
     title: "School Supplies",
@@ -27,7 +28,8 @@ const itemSeed = [
     expDate: "n/a",
     pickupLocation: "Deakin Walker Elementary 500 Old McDonald Hyw, Geelong",
     pickupTime:"At your earliest Convenience. First come first serve ",
-    date: new Date(Date.now())
+    date: new Date(Date.now()),
+    photo: "https://www.brisbanekids.com.au/wp-content/uploads/2015/04/a.jpg"
   },
 ];
 
