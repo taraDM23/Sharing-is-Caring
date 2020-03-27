@@ -9,4 +9,11 @@ text-align: center;
 background-color: white;
 background-image: url(http://www.pngall.com/wp-content/uploads/1/Community-Free-Download-PNG.png) !important;
 background-size: 500px; 
+font-family: 'Work Sans', sans-serif;
+font-weight: normal;
+}
+
+h1 {
+  font-family: 'Work Sans', sans-serif;
+  font-weight: 200;
 }
