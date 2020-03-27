@@ -1,14 +1,15 @@
 import React from "react";
+//import { Link } from "react-router-dom";
 import "./style.css";
 
 function Footer() {
   return (
     <footer className="footer">
-      <span>
-        <p className="float-right">
-          <a href="#" id="1">Top</a>
-        </p>
-      </span>
+      {/* <Link to="#">
+        <img src="http://themebubble.com/demo/webify/creative/wp-content/themes/webify/assets/img/logo-dark.png" style={{ marginRight: 15, width: 30, height: 20 }} alt=""><a href="#" id="1"></a></img>
+      </Link> */}
+
+Footer
     </footer>
   );
 }
