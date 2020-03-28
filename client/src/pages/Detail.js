@@ -3,12 +3,10 @@ import { Link } from "react-router-dom";
 import { Col, Row, Container } from "../components/Grid";
 import Jumbotron from "../components/Jumbotron";
 import API from "../utils/API";
-//import item from "./Items";
-
 
 function Detail(props) {
   const [item, setItem] = useState({})
- console.log(item + "testDetails")
+
   useEffect(() => {
     API.getItem(props.match.params.id)
       .then(res => setItem(res.data))
@@ -35,10 +33,12 @@ function Detail(props) {
         <Col size="md-12 md-offset-1">
           <article style={{ fontFamily: "Work Sans, sans-serif", padding: 15, marginRight: 50, marginLeft: 50, fontWeight: "normal" }} >
             <h4 style={{ fontFamily: "Work Sans, sans-serif", fontWeight: "normal" }}> Details </h4>
-            <img src={item.photo} alt="donation image"></img>
+          {/*   <object  data="https://www.theconsumersreview.com/admin/img/defaultimage.png" type="image/png" > */}
+            <img src={item.photo} alt="donation image" style={{ display: "block", marginLeft: "auto", marginRight: "auto",
+  width:"50%" }} ></img>{/* </object> */}
             <ul>
               <p></p>
-              <li>Item Description : {item.synopsis}</li>
+              <li><p style= {{fontWeight: 700 }}>Item Description :</p> {item.synopsis}</li>
               <li>Quantity: {item.quantity}</li>
               <li>Is delivery available?  {item.delivery} </li>
               <li>Pick Up Location: {item.pickupLocation}</li>
@@ -53,6 +53,10 @@ function Detail(props) {
           </article>
         </Col>
       </Row>
+      <Row>
+
+
+    </Row>
     </Container>
   );
 }
