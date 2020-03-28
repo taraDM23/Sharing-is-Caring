@@ -39,7 +39,7 @@ export default function AuthPage() {
                 throw new Error('Failed!')
             }
             const resultJSON = await result.json();
-            console.log(resultJSON)
+           /*  console.log(resultJSON) */
             if(resultJSON.errors){
                 console.log(resultJSON.errors[0].message)
             }
