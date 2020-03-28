@@ -5,6 +5,7 @@ import API from "../utils/API";
 import Grid from '@material-ui/core/Grid';
 import MediaCard from "../components/Card";
 import AuthContext from '../context/auth-context';
+import Loader from 'react-loader-spinner'
 
 
 function Home() {
@@ -54,7 +55,9 @@ function Home() {
 
         ) : (
             <h3>No Results to Display</h3>
+
           )}
+        <Loader type="Rings" color="#0a8b38" height={100} width={100} timeout={3000} />
       </Grid>
     </Grid>
 
