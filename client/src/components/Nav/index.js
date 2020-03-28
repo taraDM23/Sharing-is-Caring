@@ -4,9 +4,9 @@ import "./style.css";
 
 function Nav() {
   return (
-    <nav className="navbar navbar-expand-lg navbar navbar-light "> 
+    <nav className="navbar navbar-expand-lg navbar navbar-light ">
       <Link className="navbar-brand" to="/Home">
-      <img src="http://themebubble.com/demo/webify/creative/wp-content/themes/webify/assets/img/logo-dark.png" style= {{marginRight: 15 , width: 30, height: 20}} alt = ""></img>
+        <img src="http://themebubble.com/demo/webify/creative/wp-content/themes/webify/assets/img/logo-dark.png" style={{ marginRight: 15, width: 30, height: 20 }} alt=""></img>
         Sharing is Caring
       </Link>
       <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -18,11 +18,7 @@ function Nav() {
             <li className="nav-item">
               <Link
                 to="/Home"
-                className={
-                  window.location.pathname === "/" || window.location.pathname === "/about"
-                    ? "nav-link active"
-                    : "nav-link"
-                }
+                className="nav-link active nav-link"
               >
                 Home
             </Link>
@@ -30,8 +26,8 @@ function Nav() {
             {/* Items */}
             <li className="nav-item">
               <Link
-                to="/"
-                className={window.location.pathname === "/discover" ? "nav-link active" : "nav-link"}
+                to="/items"
+                className="nav-link active nav-link"
               >
                 Donate Now
             </Link>
@@ -40,7 +36,7 @@ function Nav() {
             <li className="nav-item">
               <Link
                 to="/contactUs"
-                className={window.location.pathname === "/search" ? "nav-link active" : "nav-link"}
+                className="nav-link active nav-link"
               >
                 Contact
             </Link>
@@ -49,11 +45,7 @@ function Nav() {
             <li className="nav-item">
               <Link
                 to="/aboutUs"
-                className={
-                  window.location.pathname === "/" || window.location.pathname === "/about"
-                    ? "nav-link active"
-                    : "nav-link"
-                }
+                className="nav-link active nav-link"
               >
                 About Us
             </Link>
