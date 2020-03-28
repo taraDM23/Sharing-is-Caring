@@ -56,7 +56,7 @@ function Items() {
     <Container fluid>
       <Row>
         <Jumbotron>
-          <h1>Donation</h1>
+         {/*  <h1></h1> */}
         </Jumbotron>
         <Col size="md-12">
 
@@ -72,7 +72,7 @@ function Items() {
             <Input
               onChange={handleInputChange}
               name="author"
-              placeholder="Your Details (required)"
+              placeholder="Name (required)"
             />
             <TextArea
               onChange={handleInputChange}
@@ -92,7 +92,7 @@ function Items() {
             <Input
               onChange={handleInputChange}
               name="OtherNotes"
-              placeholder="Other Details"
+              placeholder="Other Details e.g mobile"
             />
             {/*  <FormControlLabel
               control={
@@ -126,7 +126,6 @@ function Items() {
             >
               Submit
               </FormBtn>
-
           </form>
         </Col>
       </Row>

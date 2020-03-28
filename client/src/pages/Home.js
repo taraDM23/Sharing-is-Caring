@@ -33,9 +33,9 @@ function Home() {
     <Grid container spacing={3} >
       <Grid item xs={12}>
         <Jumbotron >
-          <h1>Available Items</h1>
+         {/*  <h1></h1> */}
         </Jumbotron>
-
+        <h3 style={{ paddingBottom:15 , fontWeight: "normal" }}>Donations currently available</h3>
         {items.length ? (
           <Grid container>
             {
@@ -43,7 +43,7 @@ function Home() {
                 <Grid item sm={3} xs={12} >
                   <MediaCard key={item._id} item={item}>
                   </MediaCard>
-                   <DeleteBtn onClick={() => deleteItem(item._id)} />
+                  <DeleteBtn onClick={() => deleteItem(item._id)} />
                 </Grid>
               ))
             }
