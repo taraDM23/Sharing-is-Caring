@@ -38,7 +38,7 @@ function Detail(props) {
   width:"50%" }} ></img>{/* </object> */}
             <ul>
               <p></p>
-              <li><p style= {{fontWeight: 700 }}>Item Description :</p> {item.synopsis}</li>
+              <li>Item Description: {item.synopsis}</li>
               <li>Quantity: {item.quantity}</li>
               <li>Is delivery available?  {item.delivery} </li>
               <li>Pick Up Location: {item.pickupLocation}</li>
