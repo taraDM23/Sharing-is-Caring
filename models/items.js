@@ -12,6 +12,7 @@ const itemSchema = new Schema({
   pickupLocation: { type: String},
   pickupTime: { type: String },
   date: { type: Date, default: Date.now },
+  upload: { data: Buffer, contentType: String } ,
   photo: { type: String}
     });
 

@@ -3,7 +3,7 @@ import Jumbotron from "../components/Jumbotron";
 import API from "../utils/API";
 import { Col, Row, Container } from "../components/Grid";
 import { Input, TextArea, FormBtn, } from "../components/Form";
-// import { useHistory } from 'react-router-dom';
+import UploadButton from "../components/UploadBtn"
 
 function Items(props) {
   const [items, setItem] = useState([])
@@ -43,16 +43,16 @@ function Items(props) {
         pickupLocation: formObject.pickupLocation,
         pickupTime: formObject.pickupTime,
         photo: formObject.photo,
+        upload: formObject.upload,
         date: formObject.date,
       })
         .then(res => {
-          
+
           loadItems()
-          // history.push("/")
           props.history.push("/")
-          })
+        })
         .catch(err => console.log(err));
-      
+
     }
   };
 
@@ -71,7 +71,7 @@ function Items(props) {
               onChange={handleInputChange}
               name="title"
               placeholder="Title (required)"
-           
+
 
             />
             <Input
@@ -114,6 +114,13 @@ function Items(props) {
               name="photo"
               placeholder="Add an image URL address"
             />
+       {/*      <p>or</p>
+
+            <label htmlFor="raised-button-file">
+              <UploadButton>
+                Upload
+              </UploadButton>
+            </label> */}
             <FormBtn
               disabled={!(formObject.author && formObject.title)}
               onClick={handleFormSubmit}
