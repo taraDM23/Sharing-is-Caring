@@ -114,7 +114,7 @@ function Items(props) {
               name="photo"
               placeholder="Add an image URL address"
             />
-       {/*      <p>or</p>
+            {/*      <p>or</p>
 
             <label htmlFor="raised-button-file">
               <UploadButton>
@@ -131,6 +131,10 @@ function Items(props) {
           </form>
         </Col>
       </Row>
+      <p style={{ color: "white" }}>('\n')</p>
+      <p style={{ color: "white" }}>('\n')</p>
+      <p style={{ color: "white" }}>('\n')</p>
+      <p style={{ color: "white" }}>('\n')</p>
     </Container>
   );
 }

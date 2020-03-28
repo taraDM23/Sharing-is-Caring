@@ -9,7 +9,7 @@ function contactUs() {
         <h1> Contact Us</h1>
       </Jumbotron>
 
-      <p style={{ marginRight: 50, marginLeft: 50, fontWeight: "normal",}}>
+      <p style={{ marginRight: 50, marginLeft: 50, fontWeight: "normal", }}>
         Donec a volutpat quam. Curabitur nec varius justo, sed rutrum ligula. Curabitur pellentesque
         turpis sit amet eros iaculis, a mollis arcu dictum. Ut vel ante eget massa ornare placerat.
         Etiam nisl orci, finibus sodales volutpat et, hendrerit ut dolor. Suspendisse porta dictum
@@ -21,6 +21,14 @@ function contactUs() {
         vehicula sit amet at augue. Maecenas aliquam bibendum congue. Pellentesque semper, lectus
         non ullamcorper iaculis, est ligula suscipit velit, sed bibendum turpis dui in sapien.
       </p>
+      <p style={{ color: "white" }}>('\n')</p>
+      <p style={{ color: "white" }}>('\n')</p>
+      <p style={{ color: "white" }}>('\n')</p>
+      <p style={{ color: "white" }}>('\n')</p>
+      <p style={{ color: "white" }}>('\n')</p>
+      <p style={{ color: "white" }}>('\n')</p>
+      <p style={{ color: "white" }}>('\n')</p>
+      <p style={{ color: "white" }}>('\n')</p>
     </div>
   );
 

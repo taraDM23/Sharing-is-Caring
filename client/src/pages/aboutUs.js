@@ -9,13 +9,20 @@ function aboutUs() {
       <Jumbotron>
         <h1>About Us</h1>
       </Jumbotron>
-      <p style={{ marginRight: 50, marginLeft: 50, fontWeight: "normal",}}>
-        This is a public site to post items that you have excess of or want to give away. 
-      </p>  
+      <p style={{ marginRight: 50, marginLeft: 50, fontWeight: "normal", }}>
+        This is a public site to post items that you have excess of or want to give away.
+      </p>
+      <p style={{ color: "white" }}>('\n')</p>
+      <p style={{ color: "white" }}>('\n')</p>
+      <p style={{ color: "white" }}>('\n')</p>
+      <p style={{ color: "white" }}>('\n')</p>
+      <p style={{ color: "white" }}>('\n')</p>
+      <p style={{ color: "white" }}>('\n')</p>
+      <p style={{ color: "white" }}>('\n')</p>
     </div>
-    
+
   );
-  
+
 }
 
 export default aboutUs;

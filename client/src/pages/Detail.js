@@ -57,6 +57,10 @@ function Detail(props) {
 
 
     </Row>
+      <p style={{ color: "white" }}>('\n')</p>
+      <p style={{ color: "white" }}>('\n')</p>
+      <p style={{ color: "white" }}>('\n')</p>
+      <p style={{ color: "white" }}>('\n')</p>
     </Container>
   );
 }
