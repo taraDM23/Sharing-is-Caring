@@ -15,6 +15,7 @@ function NoMatch() {
               </span>
             </h1>
           </Jumbotron>
+          <h1>You might not have authority to access this page - Try logging in</h1>
         </Col>
       </Row>
     </Container>
