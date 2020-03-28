@@ -8,8 +8,8 @@ import UploadButton from "../components/UploadBtn"
 function Items(props) {
   const [items, setItem] = useState([])
   const [formObject, setFormObject] = useState({})
-  console.log(items)
-  console.log(formObject)
+  //console.log(items)
+  // console.log(formObject) */
   // const history = useHistory();
 
   useEffect(() => {
