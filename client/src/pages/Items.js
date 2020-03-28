@@ -3,15 +3,14 @@ import Jumbotron from "../components/Jumbotron";
 import API from "../utils/API";
 import { Col, Row, Container } from "../components/Grid";
 import { Input, TextArea, FormBtn, } from "../components/Form";
-//import Checkbox from '@material-ui/core/Checkbox';
-//import FormControlLabel from '@material-ui/core/FormControlLabel';
+// import { useHistory } from 'react-router-dom';
 
-
-function Items() {
+function Items(props) {
   const [items, setItem] = useState([])
   const [formObject, setFormObject] = useState({})
   console.log(items)
   console.log(formObject)
+  // const history = useHistory();
 
   useEffect(() => {
     loadItems()
@@ -46,9 +45,14 @@ function Items() {
         photo: formObject.photo,
         date: formObject.date,
       })
-        .then(res => loadItems())
+        .then(res => {
+          
+          loadItems()
+          // history.push("/")
+          props.history.push("/")
+          })
         .catch(err => console.log(err));
-      return window.location.replace(`/home`);
+      
     }
   };
 
@@ -56,7 +60,7 @@ function Items() {
     <Container fluid>
       <Row>
         <Jumbotron>
-         {/*  <h1></h1> */}
+          <h1>Donation</h1>
         </Jumbotron>
         <Col size="md-12">
 
@@ -67,12 +71,13 @@ function Items() {
               onChange={handleInputChange}
               name="title"
               placeholder="Title (required)"
+           
 
             />
             <Input
               onChange={handleInputChange}
               name="author"
-              placeholder="Name (required)"
+              placeholder="Your Details (required)"
             />
             <TextArea
               onChange={handleInputChange}
@@ -92,19 +97,8 @@ function Items() {
             <Input
               onChange={handleInputChange}
               name="OtherNotes"
-              placeholder="Other Details e.g mobile"
+              placeholder="Other Details"
             />
-            {/*  <FormControlLabel
-              control={
-                <Checkbox
-                  
-                  onChange={handleInputChange}
-                  name="checkedB"
-                  color="primary"
-                />
-              }
-              label="Delivery Provided? "
-            /> */}
             <Input
               onChange={handleInputChange}
               name="pickupLocation"
@@ -126,6 +120,7 @@ function Items() {
             >
               Submit
               </FormBtn>
+
           </form>
         </Col>
       </Row>
