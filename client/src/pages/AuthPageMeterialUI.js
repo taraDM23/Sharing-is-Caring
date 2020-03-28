@@ -1,4 +1,4 @@
-import React, { useState, useRef, useContext } from 'react';
+/* import React, { useState, useRef, useContext } from 'react';
 import './Auth.css';
 import AuthContext from '../context/auth-context';
 import { Input, TextArea, FormBtn, } from "../components/Form";
@@ -200,4 +200,4 @@ export default function AuthPage() {
     //end of function
   )
 
-}
+} */
