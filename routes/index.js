@@ -46,7 +46,8 @@ router.post('/signup', async (req, res, next) => {
     console.log("signup", req.body)
       const result = await User.findOne({email: req.body.email});
       if(result){
-          throw new Error('User already exists.')
+        alert("User already exists.")
+          /* throw new Error('User already exists.') */
       }
       console.log(req.body.email);
       const hashedPassword = await bcrypt.hash(req.body.password, 12)
@@ -63,35 +64,6 @@ router.post('/signup', async (req, res, next) => {
       next(err)
   }   
 })
-
-
-/* router.get('/api/friends', async (req, res, next) => {
-    try{
-        console.log("/api/friends", req.body)
-        if(req.isAuth){
-            return res.json({
-                friends: [
-                    {
-                        name: "Alex"
-                    },
-                    {
-                        name: "Tom"
-                    }
-                ]
-            })
-        }else{
-
-            throw new Error('Unauthenticated!');
-            
-        }
-
-    }
-    catch (err){
-        console.log({err});
-        next(err.message)
-    }   
-})
- */
 
 // If no API routes are hit, send the React app
 router.use(function(req, res) {
