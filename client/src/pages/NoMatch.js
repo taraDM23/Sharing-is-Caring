@@ -15,7 +15,7 @@ function NoMatch() {
               </span>
             </h1>
           </Jumbotron>
-          <h1>You might not have authority to access this page - Try logging in</h1>
+          <h1 style={{ fontFamily: "Work Sans, sans-serif", margin: 15, fontWeight: "normal" }}>Oops!  Try logging in</h1>
         </Col>
       </Row>
     </Container>
