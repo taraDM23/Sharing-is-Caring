@@ -8,8 +8,7 @@ function Footer() {
       {/* <Link to="#">
         <img src="http://themebubble.com/demo/webify/creative/wp-content/themes/webify/assets/img/logo-dark.png" style={{ marginRight: 15, width: 30, height: 20 }} alt=""><a href="#" id="1"></a></img>
       </Link> */}
-
-Footer
+      <p>Copyright TdM</p>
     </footer>
   );
 }
