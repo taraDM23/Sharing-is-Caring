@@ -1,8 +1,12 @@
-import React from "react";
+import React, { useContext } from "react";
 import { Link } from "react-router-dom";
+import AuthContext from '../../context/auth-context';
 import "./style.css";
 
 function Nav() {
+
+  const { token, logout } = useContext(AuthContext);
+
   return (
     <nav className="navbar navbar-expand-lg navbar navbar-light ">
       <Link className="navbar-brand" to="/Home">
@@ -24,14 +28,14 @@ function Nav() {
             </Link>
             </li>
             {/* Items */}
-            <li className="nav-item">
+             {token && <li className="nav-item">
               <Link
                 to="/items"
                 className="nav-link active nav-link"
               >
                 Donate Now
             </Link>
-            </li>
+            </li>}
             {/* Contact Us */}
             <li className="nav-item">
               <Link
@@ -50,6 +54,24 @@ function Nav() {
                 About Us
             </Link>
             </li>
+            {/* Log in and Out */}
+            {!token && <li className="nav-item">
+              <Link
+                to="/auth"
+                className="nav-link active nav-link"
+              >
+                Log In
+            </Link>
+            </li>}
+            {token && <li className="nav-item">
+              <Link
+                className="nav-link active nav-link"
+          
+                onClick={logout}
+              >
+                Log Out
+            </Link>
+            </li>}
           </ul>
         </div>
       </div>
