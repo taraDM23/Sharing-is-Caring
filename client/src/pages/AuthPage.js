@@ -2,8 +2,9 @@ import React, { useState, useRef, useContext } from 'react';
 import './Auth.css';
 import AuthContext from '../context/auth-context';
 import Jumbotron from "../components/Jumbotron";
-import { Col, Row, Container } from "../components/Grid";
+import { Row, Container } from "../components/Grid";
 import Loader from 'react-loader-spinner'
+//import Alert from "../components/Alert"
 
 export default function AuthPage() {
 
@@ -37,15 +38,14 @@ export default function AuthPage() {
         }
       });
 
-
-
       if (result.status !== 200 && result.status !== 201) {
-        throw new Error('Failed!')
+        /* throw new Error('Failed!') */
+        alert("This email address is already being used")
       }
       const resultJSON = await result.json();
       /*  console.log(resultJSON) */
       if (resultJSON.errors) {
-        console.log(resultJSON.errors[0].message)
+        /* console.log(resultJSON.errors[0].message) */
       }
       else {
         if (resultJSON.token) {
@@ -68,6 +68,7 @@ export default function AuthPage() {
 
     <Container fluid>
       <Row>
+
         <Jumbotron >
           <h1 style={{ "margin": "auto" }}>{state.isLogin ? 'Login' : 'Signup'}</h1>
         </Jumbotron>
@@ -75,7 +76,7 @@ export default function AuthPage() {
       <h4 style={{ "margin": "auto" }}>Please {state.isLogin ? 'Login' : 'Signup'} Below</h4>
 
       <form className="auth-form" onSubmit={submitHandler}>
-        <Loader type="Rings" color="#0a8b38" transparency="20%" height={500} width={500}  timeout={3000} />
+        <Loader type="Rings" color="#0a8b38" transparency="20%" height={500} width={500} timeout={3000} />
         <Row>
 
           <label htmlFor="email" id="email" >Email</label>
