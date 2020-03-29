@@ -39,7 +39,7 @@ function Items(props) {
         quantity: formObject.quantity,
         expDate: formObject.expDate,
         OtherNotes: formObject.OtherNotes,
-        delivery: formObject.delivery,
+        /* delivery: formObject.delivery, */
         pickupLocation: formObject.pickupLocation,
         pickupTime: formObject.pickupTime,
         photo: formObject.photo,
@@ -59,35 +59,33 @@ function Items(props) {
   return (
     <Container fluid>
       <Row>
-        <Jumbotron>
-          <h1>Donation</h1>
+        <Jumbotron  style={{ fontFamily: "Work Sans, sans-serif", fontWeight: "normal" }}>
+          <h1 style={{ fontFamily: "Work Sans, sans-serif", fontWeight: "normal" }}>Donations</h1>
         </Jumbotron>
         <Col size="md-12">
 
-          <h4 style={{ fontWeight: "normal" }}>Please enter the details of the item here:</h4>
+          <h4 style={{ fontWeight: "normal" }}>Share details of what you have to donate here:</h4>
           <form style={{ marginLeft: 50, marginRight: 50, marginTop: 15 }} >
 
             <Input
               onChange={handleInputChange}
               name="title"
               placeholder="Title (required)"
-
-
             />
             <Input
               onChange={handleInputChange}
               name="author"
-              placeholder="Your Details (required)"
+              placeholder="Name (required)"
             />
             <TextArea
               onChange={handleInputChange}
               name="synopsis"
-              placeholder="Donation Details"
+              placeholder="Information about the donation"
             />
             <Input
               onChange={handleInputChange}
               name="quantity"
-              placeholder="Quantity"
+              placeholder="Quantity (Optional)"
             />
             <Input
               onChange={handleInputChange}
@@ -97,12 +95,12 @@ function Items(props) {
             <Input
               onChange={handleInputChange}
               name="OtherNotes"
-              placeholder="Other Details"
+              placeholder="Other Details -e.g Contact Info"
             />
             <Input
               onChange={handleInputChange}
               name="pickupLocation"
-              placeholder="pickup Location (If any)"
+              placeholder="Pickup Location (If any)"
             />
             <Input
               onChange={handleInputChange}

@@ -3,7 +3,7 @@ import './Auth.css';
 import AuthContext from '../context/auth-context';
 import Jumbotron from "../components/Jumbotron";
 import { Row, Container } from "../components/Grid";
-import Loader from 'react-loader-spinner'
+// import Loader from 'react-loader-spinner'
 //import Alert from "../components/Alert"
 
 export default function AuthPage() {
@@ -70,21 +70,22 @@ export default function AuthPage() {
       <Row>
 
         <Jumbotron >
-          <h1 style={{ "margin": "auto" }}>{state.isLogin ? 'Login' : 'Signup'}</h1>
+          <h1 style={{ "margin": "auto", fontFamily: "Work Sans, sans-serif", fontWeight: "normal" }}>{state.isLogin ? 'Login' : 'Signup'}</h1>
         </Jumbotron>
       </Row>
-      <h4 style={{ "margin": "auto" }}>Please {state.isLogin ? 'Login' : 'Signup'} Below</h4>
+      <h4 style={{ "margin": "auto", fontFamily: "Work Sans, sans-serif", fontWeight: "normal" }}>Please {state.isLogin ? 'Login' : 'Signup'} Below</h4>
 
       <form className="auth-form" onSubmit={submitHandler}>
-        <Loader type="Rings" color="#0a8b38" transparency="20%" height={500} width={500} timeout={3000} />
+        {/*         <Loader type="Rings" color="#0a8b38" transparency="20%" height={500} width={500} timeout={3000} />*/}
+
         <Row>
 
-          <label htmlFor="email" id="email" >Email</label>
+          <label style={{ fontFamily: "Work Sans, sans-serif", fontWeight: "normal" }} htmlFor="email" id="email" >Email</label>
 
           <input type="email" id="email" ref={emailEl}></input>
 
 
-          <label htmlFor="password" id="password">Password</label>
+          <label style={{ fontFamily: "Work Sans, sans-serif", fontWeight: "normal" }} htmlFor="password" id="password">Password</label>
           <input type="password" id="password" ref={passwordEL}></input>
 
           <div className="form-actions">

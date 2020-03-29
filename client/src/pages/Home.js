@@ -34,8 +34,8 @@ function Home() {
   return (
     <Grid container spacing={3} >
       <Grid item xs={12}>
-        <Jumbotron >
-          <h1>Available Items</h1>
+        <Jumbotron  style={{ fontFamily: "Work Sans, sans-serif", fontWeight: "normal" }}>
+          <h1 style={{ fontFamily: "Work Sans, sans-serif", fontWeight: "normal" }}>Available Items</h1>
         </Jumbotron>
 
         {items.length ? (

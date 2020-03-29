@@ -16,12 +16,12 @@ function Detail(props) {
   return (
     <Container fluid>
       <Row>
-        <Jumbotron>
-          <h5>
+        <Jumbotron  style={{ fontFamily: "Work Sans, sans-serif", fontWeight: "normal" }}>
+          <h4 style={{ fontFamily: "Work Sans, sans-serif", fontWeight: "normal" }}>
             {item.title}
-          </h5>
+          </h4>
 
-          <h5>
+          <h5 style={{ fontFamily: "Work Sans, sans-serif", fontWeight: "normal" }}>
             Shared by {item.author}
           </h5>
         </Jumbotron>
@@ -30,7 +30,7 @@ function Detail(props) {
         </Col>
       </Row>
       <Row>
-        <Col size="md-12 md-offset-1">
+        <Col size="md-12 md-offset-1" style={{ fontFamily: "Work Sans, sans-serif", fontWeight: "normal" }}>
           <article style={{ fontFamily: "Work Sans, sans-serif", padding: 15, marginRight: 50, marginLeft: 50, fontWeight: "normal" }} >
             <h4 style={{ fontFamily: "Work Sans, sans-serif", fontWeight: "normal" }}> Details </h4>
             {/*   <object  data="https://www.theconsumersreview.com/admin/img/defaultimage.png" type="image/png" > */}
@@ -42,7 +42,7 @@ function Detail(props) {
               <p></p>
               <li>Item Description: {item.synopsis}</li>
               <li>Quantity: {item.quantity}</li>
-              <li>Is delivery available?  {item.delivery} </li>
+             {/*  <li>Is delivery available?  {item.delivery} </li> */}
               <li>Pick Up Location: {item.pickupLocation}</li>
               <li>Pick Up times: {item.pickupTime}</li>
               <li>Items will expire by : {item.expDate} </li>

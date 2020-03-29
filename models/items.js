@@ -8,7 +8,7 @@ const itemSchema = new Schema({
   quantity: {type: String},
   expDate: {type: String},
   OtherNotes: String,
-  delivery: Boolean,
+  /* delivery: Boolean, */
   pickupLocation: { type: String},
   pickupTime: { type: String },
   date: { type: Date, default: Date.now },
