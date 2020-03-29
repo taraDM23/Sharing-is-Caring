@@ -119,7 +119,7 @@ export default function AuthPage() {
 
     /// meterial ui 
 
-    <Container component="main" maxWidth="xs">
+   /*  <Container component="main" maxWidth="xs">
       <CssBaseline />
       <div className={classes.paper}>
         <Avatar className={classes.avatar}>
@@ -200,4 +200,4 @@ export default function AuthPage() {
     //end of function
   )
 
-} */
+} */ 
