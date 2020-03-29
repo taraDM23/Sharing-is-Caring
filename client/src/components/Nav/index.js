@@ -36,15 +36,19 @@ function Nav() {
                 Donate Now
             </Link>
             </li>}
+            
             {/* Contact Us */}
-            <li className="nav-item">
+
+      {/*       <li className="nav-item">
               <Link
                 to="/contactUs"
                 className="nav-link active nav-link"
               >
                 Contact
             </Link>
-            </li>
+            </li> */}
+
+
             {/* About Us */}
             <li className="nav-item">
               <Link
@@ -55,7 +59,7 @@ function Nav() {
             </Link>
             </li>
             {/* Log in and Out */}
-            {!token && <li className="nav-item">
+            {!token && <li className="nav-item justify-content-end">
               <Link
                 to="/auth"
                 className="nav-link active nav-link"
@@ -63,7 +67,7 @@ function Nav() {
                 Log In
             </Link>
             </li>}
-            {token && <li className="nav-item">
+            {token && <li className="nav-item justify-content-end">
               <Link
                 className="nav-link active nav-link"
           
