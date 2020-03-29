@@ -40,12 +40,12 @@ export default function MediaCard(props) {
       <Card className={classes.root}>
         <CardActionArea>
           <Link to={"/item/" + props.item._id } >
-            <img src={props.item.photo} style= {{width: 300, height: 200}} alt="donation image"></img>
+            <img src={props.item.photo} style= {{width: 300, height: 200}} alt="donation"></img>
             <CardContent>
               <Typography gutterBottom variant="p" component="p" style= {{padding: 0}}>
                 {props.item.title}
               </Typography>
-              <Typography variant="body2" color="textSecondary" component="p" style= {{padding: 0}}>
+              <Typography variant="body2" color="textSecondary" component="p" style= {{padding: 0 , wordWrap: "break-word"}}>
                 {props.item.title} posted by {props.item.author}
               </Typography>
             </CardContent>

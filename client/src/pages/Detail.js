@@ -33,9 +33,11 @@ function Detail(props) {
         <Col size="md-12 md-offset-1">
           <article style={{ fontFamily: "Work Sans, sans-serif", padding: 15, marginRight: 50, marginLeft: 50, fontWeight: "normal" }} >
             <h4 style={{ fontFamily: "Work Sans, sans-serif", fontWeight: "normal" }}> Details </h4>
-          {/*   <object  data="https://www.theconsumersreview.com/admin/img/defaultimage.png" type="image/png" > */}
-            <img src={item.photo} alt="donation image" style={{ display: "block", marginLeft: "auto", marginRight: "auto",
-  width:"50%" }} ></img>{/* </object> */}
+            {/*   <object  data="https://www.theconsumersreview.com/admin/img/defaultimage.png" type="image/png" > */}
+            <img src={item.photo} alt="donation" style={{
+              display: "block", marginLeft: "auto", marginRight: "auto",
+              width: "50%"
+            }} ></img>{/* </object> */}
             <ul>
               <p></p>
               <li>Item Description: {item.synopsis}</li>
@@ -47,7 +49,7 @@ function Detail(props) {
               <li>Additional Information: {item.OtherNotes}  </li>
               <li>Date Posted: {item.date} </li>
               <li>Post ID: {item._id}   </li>
- 
+
             </ul>
             <Link to="/Home" style={{ fontFamily: "Work Sans, sans-serif", margin: 15, fontWeight: "normal" }}>← Back to Items</Link>
           </article>
@@ -56,7 +58,7 @@ function Detail(props) {
       <Row>
 
 
-    </Row>
+      </Row>
       <p style={{ color: "white" }}>('\n')</p>
       <p style={{ color: "white" }}>('\n')</p>
       <p style={{ color: "white" }}>('\n')</p>
