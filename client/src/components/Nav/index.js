@@ -28,7 +28,7 @@ function Nav() {
             </Link>
             </li>
             {/* Items */}
-             {token && <li className="nav-item">
+            {token && <li className="nav-item">
               <Link
                 to="/items"
                 className="nav-link active nav-link"
@@ -36,17 +36,17 @@ function Nav() {
                 Donate Now
             </Link>
             </li>}
-            
+
             {/* Contact Us */}
 
-      {/*       <li className="nav-item">
+            <li className="nav-item">
               <Link
                 to="/contactUs"
                 className="nav-link active nav-link"
               >
                 Contact
             </Link>
-            </li> */}
+            </li>
 
 
             {/* About Us */}
@@ -70,7 +70,7 @@ function Nav() {
             {token && <li className="nav-item justify-content-end">
               <Link
                 className="nav-link active nav-link"
-          
+
                 onClick={logout}
               >
                 Log Out
