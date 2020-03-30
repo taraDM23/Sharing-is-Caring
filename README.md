@@ -1,4 +1,4 @@
-# Sharing-is-Caring
+# Sharing is Caring
 
 Sharing is Caring is an application that can be used to share tiems you have to donate. Visit deployed site [here](https://still-mesa-84717.herokuapp.com/Home).
 
