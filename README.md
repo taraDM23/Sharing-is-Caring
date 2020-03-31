@@ -1,6 +1,6 @@
 # Sharing is Caring
 
-Sharing is Caring is an application that can be used to share tiems you have to donate. Visit deployed site [here](https://still-mesa-84717.herokuapp.com/Home).
+Sharing is Caring is an application that can be used to share tiems you have to donate. Visit deployed site [here](https://sharing-is-caring2020.herokuapp.com/).
 
 ## Project description 
 This application stands as a site to view, share items tha you wish to donate. A user can create an account and utilise this platform to post items free to a deserving home. 
